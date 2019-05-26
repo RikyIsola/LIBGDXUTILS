@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.island.libgdxutils">
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Libgdx utils for android"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+		android:resizeableActivity="false">
+        <activity
+            android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+		<activity
+			android:name=".Executer"/>
+		<activity
+			android:name=".Instructions"/>
+		<activity
+			android:name=".DaeActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.SEND"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="model/vnd.collada+xml"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="*/*"/>
+				<data android:pathPattern=".*\\.dae"/>
+				<data android:host="*"/>
+				<data android:scheme="file"/>
+			</intent-filter>
+		</activity>
+    </application>
+
+</manifest>

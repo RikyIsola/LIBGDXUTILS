@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:text="YOU CAN FIND THE FILE IN"
+		android:layout_weight="1.0"
+		android:gravity="center"
+		android:textSize="30dp"/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:gravity="center"
+		android:id="@+id/text"
+		android:layout_weight="1.0"
+		android:text="/storage/emulated/0/LibgdxUtils/font.fnt"
+		android:textSize="30dp"/>
+
+</LinearLayout>
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:text="TO USE THE TEXTURE ATLAS PACKER YOU NEED TO SELECT ALL THE FILES YOU WANT TO PACK BY LONG PRESSING THEM.THE GENERATED FILES ARE A PNG AND AN ATLAS WHICH CONTAINS THE IMAGE WITH THEIR NAME.THE IMAGE WILL BE SCALED TO THE SAME SIZE AND THEY WILL BE A 2 POWER SCALE"
+		android:textSize="23dp"/>
+
+</LinearLayout>
+
+
